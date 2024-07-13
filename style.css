@@ -1,0 +1,77 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: blueviolet;
+}
+.container {
+  margin-top: 60px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.calculator {
+  width: 320px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: black;
+  border: 3px solid white;
+  border-radius: 10%;
+  position: absolute;
+  /* justify-content: end; */
+  align-items: end;
+  font-family: "Courier New", Courier, monospace;
+}
+.calculator .screen {
+  flex: 1;
+  font-size: 70px;
+  position: relative;
+}
+.screen > span {
+  position: absolute;
+  top: 60%;
+  right: 50%;
+}
+.calculator .button {
+  display: flex;
+  flex: 3;
+  width: 300px;
+  flex-direction: row;
+  margin-right: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+}
+.calculator .button > div {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 70px;
+  margin-right: 3px;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: background-color 0.15s;
+}
+.button > .button-special {
+  color: black;
+  background-color: gray;
+}
+.button > .button-function {
+  background-color: orange;
+}
+.button > .button-numbers {
+  background-color: rgb(52, 50, 50);
+}
+.button > div:active {
+  background-color: #ccc;
+}
+.button > div:hover {
+  background-color: #ccc;
+}
